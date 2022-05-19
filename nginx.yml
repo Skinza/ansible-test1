@@ -1,7 +1,7 @@
 ---
 - hosts: all
   tasks:
-  - name: install nginx # noqa 403
+  - name: install nginx 
     package:
         name:
         - nginx
