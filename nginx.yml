@@ -1,0 +1,17 @@
+---
+- hosts: all
+  tasks:
+  - name: install nginx # noqa 403
+    package:
+        name:
+        - nginx
+        state: latest
+  - name: deploy index.html
+    copy:
+            src: index.html
+            dest: /usr/share/nginx/html/index.html
+
+  - name: start nginx
+    service:
+            name: nginx
+            state: started
