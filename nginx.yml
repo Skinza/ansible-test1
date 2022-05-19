@@ -9,7 +9,7 @@
   - name: deploy index.html
     copy:
             src: index.html
-            dest: /usr/share/nginx/html/index.html
+            dest: /usr/share/nginx/html/index22.html
 
   - name: start nginx
     service:
